@@ -1,0 +1,17 @@
+.container {
+  margin-top: 50px;
+}
+.coin-logo {
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+}
+.table-dark {
+  color: white;
+}
+.table-dark thead {
+  background-color: rgba(30, 33, 41, 0.792);
+}
+.table-dark tbody {
+  background-color: rgba(23, 27, 39, 0.792);
+}
