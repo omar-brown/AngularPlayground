@@ -2,20 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-
 import { AppComponent } from './app.component';
 import { FilterNotesPipe } from './filter-notes.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FilterNotesPipe
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-  ],
+  declarations: [AppComponent, FilterNotesPipe],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

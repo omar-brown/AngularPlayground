@@ -11,18 +11,23 @@
             <th scope="col">Notes</th>
           </tr>
         </thead>
-          <tbody>
-            <tr *ngFor="let currency of currencies; let i = index">
-              <th scope="row">{{i + 1}}</th>
-              <td>
-                <img class="coin-logo" [src]="currency.imageUrl" loading="lazy" alt="{{currency.symbol}} logo">
-                {{currency.name}}
-              </td>
-              <td>{{currency.symbol}}</td>
-              <td>{{currency.price | currency:"USD":"symbol":"1.2-4" }}</td>
-              <td>{{currency.notes | filterNotes}}</td>
-            </tr>
-          </tbody>
+        <tbody>
+          <tr *ngFor="let currency of currencies; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>
+              <img
+                class="coin-logo"
+                [src]="currency.imageUrl"
+                loading="lazy"
+                alt="{{ currency.symbol }} logo"
+              />
+              {{ currency.name }}
+            </td>
+            <td>{{ currency.symbol }}</td>
+            <td>{{ currency.price | currency: "USD":"symbol":"1.2-4" }}</td>
+            <td>{{ currency.notes | filterNotes }}</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
